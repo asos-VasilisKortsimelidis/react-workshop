@@ -3,7 +3,7 @@ import App from "./App";
 import { shallow } from "enzyme";
 
 describe("App component", () => {
-  it("should match the snapshot", () => {
+  it.only("should match the snapshot", () => {
     const component = shallow(<App />);
 
     expect(component).toMatchSnapshot();
