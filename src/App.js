@@ -12,8 +12,13 @@ class App extends Component {
   }
 
   updateHobbyHandler = e => {
-    // console.log(e.target.value)
-    // CALL this.state here and update the hobby :)
+    this.setState({
+      hobby: e.target.value
+    });
+  };
+
+  submitHandler = e => {
+    alert(this.state.hobby);
   };
 
   render() {
@@ -23,7 +28,7 @@ class App extends Component {
           My hobby is: {this.state.hobby}
         </Person>
         Change my hobby to:
-        <form>
+        <form onSubmit={this.submitHandler}>
           <input type="text" onChange={this.updateHobbyHandler} />
           <button type="submit">Update hobby</button>
         </form>
