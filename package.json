@@ -5,9 +5,15 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@types/enzyme": "^3.10.5",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "jest-enzyme": "^7.1.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-test-renderer": "16.12.0"
   },
   "devDependencies": {
     "typescript": "3.3.3"
