@@ -11,6 +11,18 @@ class App extends Component {
     };
   }
 
+  windowResizeHandler = () => {
+    console.log("resized");
+  }
+
+  componentDidMount() {
+    
+  }
+
+  componentWillUnmount() {
+
+  }
+
   updateHobbyHandler = e => {
     this.setState({
       hobby: e.target.value
