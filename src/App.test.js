@@ -15,7 +15,6 @@ describe("App component", () => {
     component.instance().forceUpdate(); //fixes an issue when trying to simulate events and using spies https://github.com/airbnb/enzyme/issues/944#issuecomment-322271527
 
     component.find("CSS SELECTOR HERE").simulate("EVENT YOU WANT TO SIMULATE");
-    console.log(component.instance());
     expect(spy).toHaveBeenCalled();
   })
 
