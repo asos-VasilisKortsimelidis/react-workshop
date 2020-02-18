@@ -13,7 +13,7 @@ class App extends Component {
 
   updateHobbyHandler = e => {
     // console.log(e.target.value)
-    // CALL this.state here and update the hobby :)
+    // CALL this.setState here and update the hobby :)
   };
 
   render() {
